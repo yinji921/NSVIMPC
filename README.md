@@ -4,12 +4,12 @@ This repository contains the code for reproducing the simulations in the paper:
 **"Safe Beyond the Horizon: Efficient Sampling-based MPC with Neural Control Barrier Functions"**
 ## Repository Structure
 
-### Core Simulation Scripts for Paper Reproduction
-- **AutoRally experiments** (Section V.A & VI):
+### Core Simulation Scripts
+- **AutoRally experiments**:
   - `robot_planning/scripts/run_AutoRally_CBF_MPPI_for_experiment.py` - Main AutoRally simulation
   - `robot_planning/scripts/run_ablations.py` - Ablation studies
   
-- **Drone/Quadrotor2D experiments** (Section V.B):
+- **Drone/Quadrotor2D experiments**:
   - `robot_planning/scripts/run_quadrotor2d.py` - 2D quadrotor simulation
   
 - **Additional experiments**:
@@ -145,8 +145,4 @@ If you use this code in your research, please cite our papers:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
