@@ -1,0 +1,20 @@
+[project]
+name = "og"
+authors = [
+    {name = "Oswin So", email = "oswinso@gmail.com"},
+]
+dependencies = [
+    "jax",
+    "einops",
+    "jaxtyping",
+    "loguru"
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+known_first_party = [""]

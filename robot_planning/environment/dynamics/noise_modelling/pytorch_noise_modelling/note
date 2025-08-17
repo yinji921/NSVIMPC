@@ -1,0 +1,10 @@
+1. VAE can be used to model additive noise, including bias, and covariance of the noise term.
+2. Theoretically, it is possible to model the nominal dynamics together with the additive noise with a VAE, however, because VAE
+also has the property to "denoise" noisy data, it can be practically difficult to do this. Perhaps we need more careful design of the
+loss function etc.?
+3. We can utilize this property of VAE to model the nominal dynamics by the collected noisy data. At the same time, we can try another
+VAE to model the noise term.
+
+4. Since the VAE can concatenate x,y and learn their relationship (e.g. the sine wave), we can let covariance of the injected disturbances be
+dependent on x, and see if VAE can learn a state-dependent disturbance. Note that you may want to remove the sine wave, and use pure noise
+to train the VAE, otherwise concatenate x, y for the input_data will make VAE learn the denoised sine wave.

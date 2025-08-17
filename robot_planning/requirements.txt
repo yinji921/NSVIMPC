@@ -1,0 +1,49 @@
+# NSVIMPC Python Environment Requirements
+# 
+# RECOMMENDED: Use environment.yml in root directory with conda
+# See README.md for detailed installation instructions
+#
+# Manual pip installation (not recommended due to dependency conflicts):
+
+# Core scientific computing
+matplotlib==3.9.2
+numpy==1.26.4
+scipy==1.14.1
+torch==2.5.1
+tqdm==4.67.0
+pytest==8.4.1
+
+# JAX ecosystem (versions must be compatible)
+jax==0.4.24
+jaxlib==0.4.24
+flax==0.8.1
+optax==0.1.8
+jaxtyping==0.2.36
+einops==0.8.0
+
+# TensorFlow Probability for distributions
+tensorflow-probability[jax]==0.25.0
+
+# Checkpoint management for neural networks
+orbax-checkpoint==0.5.3
+
+# Configuration and utilities
+attrs==24.2.0
+cattrs==24.1.2
+loguru==0.7.2
+
+# Scientific computing and visualization
+seaborn==0.13.2
+imageio==2.36.0
+
+# Experiment tracking
+wandb==0.16.3
+
+# Development tools
+ipdb==0.13.13
+
+# Video rendering (if needed)
+moviepy==2.0.0
+
+# Local packages
+-e ./og
